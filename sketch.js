@@ -6,8 +6,6 @@ let toColorPicker;
 function setup() {
   createCanvas(600, 600); 
   strokeCap(PROJECT);
-  
-  
   createP('Controls');
   
   createElement('label', 'Circles Quantity: ');
@@ -27,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-  background(240); //
+  background(240); 
   push();
   translate(width / 2, height / 2); 
   let numClusters = 6;              
@@ -53,7 +51,7 @@ function drawConcentricCircles() {
   let to = color(toColorPicker.value());
   
   noFill();
-  strokeWeight(6); /
+  strokeWeight(6); 
   
   for (let i = 0; i < num; i++) {
     let amt = i / (num - 1);
